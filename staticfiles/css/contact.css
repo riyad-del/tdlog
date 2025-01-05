@@ -1,0 +1,225 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-width: 125px; /* Adjust the logo size as needed */
+    height: auto;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex: 1; /* Allows the nav-list to take up available space */
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #ff6600; /* Change the color on hover */
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px; /* Add space between buttons */
+}
+
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+.contact-info {
+    background-color: #e0f7fa; /* Couleur de fond douce */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.contact-info h3 {
+    color: #00796b; /* Couleur du texte */
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-info p {
+    color: #004d40; /* Couleur du texte */
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.contact-info p strong {
+    color: #000; /* Couleur du texte en gras */
+}
+
+.part1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto; /* Ajuste la hauteur automatiquement */
+    margin-top: 40px; /* Espace entre la section de contact-info et les icônes */
+}
+
+.icon-with-text {
+    text-align: center;
+    flex: 1;
+    margin: 10px; /* Espace entre les conteneurs */
+}
+
+.logogmail, .logoinsta, .logofb {
+    font-size: 120px; /* Taille des icônes */
+    color: #000; /* Couleur de l'icône */
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 0 auto 20px auto; /* Centre l'icône horizontalement */
+}
+
+.logogmail:hover, .logoinsta:hover, .logofb:hover {
+    color: #ff6600; /* Change la couleur au survol */
+    transform: scale(1.1); /* Légère agrandissement au survol */
+}
+
+.parag-container {
+    background-color: #ff6600; /* Couleur de fond orange */
+    padding: 15px 20px;
+    border-radius: 10px;
+    max-width: 250px; /* Largeur maximale du conteneur */
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.parag-container p {
+    color: white; /* Couleur du texte */
+    font-size: 16px; /* Taille du texte */
+    margin: 0;
+}
+
+
+footer {
+    background-color: #4A4DE7; /* Background color of the footer */
+    color: white;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-section ul li i {
+    margin-right: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom p {
+    margin: 10px 0;
+}
+
+.footer-bottom a {
+    color: #FFD700; /* Link color */
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin-top: 10px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #FFD700; /* Hover color */
+}

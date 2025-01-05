@@ -1,0 +1,212 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Top Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    max-width: 125px; /* Adjust the logo size as needed */
+    height: auto;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex: 1; /* Allows the nav-list to take up available space */
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #ff6600; /* Change the color on hover */
+}
+
+/* Auth button styles */
+.auth-buttons {
+    display: flex;
+    gap: 10px; /* Add space between buttons */
+}
+
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+.navbar-vertical ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #F5F5DC; /* Light background color */
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-right: 2px solid #ddd; /* Add a border to separate the navbar */
+}
+
+.navbar-vertical li {
+    margin: 10px 0; /* Space between items */
+}
+
+.navbar-vertical li a {
+    display: block;
+    color: #333; /* Darker text color */
+    padding: 15px 20px; /* More padding for larger click area */
+    text-decoration: none;
+    font-weight: bold; /* Make the text bold */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.navbar-vertical li a.active {
+    background-color: #ff6600; /* Highlight active link */
+    color: white; /* Text color on active link */
+}
+
+.navbar-vertical li a:hover:not(.active) {
+    background-color: #ff9933; /* Lighter hover effect */
+    color: white;
+    transform: translateY(-5px); /* Slightly lift the element on hover */
+}
+
+.navbar-vertical li a i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Footer styles */
+footer {
+    background-color: #4A4DE7; /* Background color of the footer */
+    color: white;
+    padding: 20px 0;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-section ul li i {
+    margin-right: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom p {
+    margin: 10px 0;
+}
+
+.footer-bottom a {
+    color: #FFD700; /* Link color */
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin-top: 10px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #FFD700; /* Hover color */
+}
+
+/* Main content area */
+.main-content {
+    margin-left: 240px; /* Adjust this to the width of your vertical navbar */
+    padding: 20px;
+    flex-grow: 1;
+}
